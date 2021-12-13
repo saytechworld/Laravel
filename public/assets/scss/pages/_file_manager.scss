@@ -1,0 +1,116 @@
+.file_manager{
+    .file{
+        @extend .padding-0;
+        position: relative;
+        border-radius: $border-radius-large;
+        overflow: hidden;
+        .image, .icon{
+            max-height: 180px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: top;            
+        }
+        .hover{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            display: none;
+            transition: all 0.2s ease-in-out;
+        }
+        a{
+        &:hover{                
+                .hover{
+                    @extend .displayblock;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+        }
+        .icon {
+            padding: 15px 10px;
+            display: table;
+            width: 100%;
+            @extend .align-center;
+
+            i {                
+                display: table-cell;
+                font-size: 30px;
+                vertical-align: middle;
+                color: $grey-600;
+                line-height: 100px;
+            }
+        }
+        .file-name {
+            padding: 10px;
+            border-top:1px solid $grey-100;
+            small{
+                @extend .displayblock;
+
+                .date{
+                    float: right;
+                }
+            }
+        }
+        &:hover{                
+                .hover{
+                    @extend .displayblock;
+                    display: block;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+        .video-bx{
+            position: relative;
+        }
+    }
+    .file-folder{
+        background: #f2f2f2;
+        position: relative;
+        .file-icon{
+            position: absolute;
+            left: 14px;
+            top: 10px;
+        }
+        .file-name{
+            padding-left: 35px;
+        }
+    }
+}
+
+.tab-content{    
+    .thumbnail{
+        position: relative;
+        .hover{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                display: none;
+                transition: all 0.2s ease-in-out;
+        }
+         &:hover{                
+                .hover{
+                    @extend .displayblock;
+                    display: block;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+    }
+}
+
+.folder{padding: 20px;display: block;color: $grey-600;
+    h6{
+        @extend .m-b-0;
+    }
+}
+
+@media only screen and (max-width:992px) {    
+    .file_manager{
+                
+        .nav-tabs{
+            padding-left: 0;
+            padding-right: 0;
+    
+            .nav-item{
+                display: inline-block;
+            }
+        }
+    }
+}

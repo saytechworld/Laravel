@@ -1,0 +1,428 @@
+/* Nav  CSS  Start*/
+
+
+body {
+  position: relative; }
+
+.lft-top-shap {
+	left: 0;
+	top: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.rit-bottm-shap {
+  right: 0;
+  bottom: 0;
+    position: absolute; }
+
+.menu .cmn-green-btn{min-width: 127px;}
+.menu .cmn-blue-btn{min-width: 157px;}
+
+
+.dropdown {
+      border:0;
+    border-radius:0;
+    width:auto;    
+}
+.dropdown-menu>li>a {
+    color:#333333;
+    font-size: 15px;
+    line-height: 23px;
+    padding: 0;
+}
+
+.dropdown-menu > li {
+	padding: 7px 15px;
+	width: 100%;
+	display: inline-block;
+}
+.dropdown ul.dropdown-menu {
+	border-radius: 4px;
+	left: inherit;
+	right: 0;
+	margin-top: 20px;
+	min-width: 251px;
+	box-shadow: 0 03px 10px rgba(0,0,0,0.1);
+	border: 1px solid #ccc;
+    margin-top: 0 !important;
+}
+
+.dropdown ul.dropdown-menu:before {
+    content: "";
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    z-index: 10;
+}
+.dropdown ul.dropdown-menu:after {
+    content: "";
+    border-bottom: 12px solid #ccc;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: absolute;
+    top: -12px;
+    right: 14px;
+    z-index: 9;
+}
+.menu-dd.dropdown .dropdown-toggle{font-weight: 500;}
+.menu-dd.dropdown .dropdown-toggle i.wb-laguage-icon{padding-right: 15px;font-size: 26px;}
+.menu-dd.dropdown .dropdown-toggle span.wb-arrow-icon-down {
+	padding-left: 15px;
+	font-size: 12px;
+	color: #333333;
+}
+.dd-info .dropdown-menu > li > strong{font-size: 16px; color: #163C7B }
+.menu-dd.dropdown .dropdown-menu > li > a:focus, .menu-dd.dropdown .dropdown-menu > li > a:hover{background-color: transparent;color: #10C8CD;}
+
+
+/* Nav  CSS  End*/
+
+.nav {
+	width: 100%;
+	position: fixed;
+	text-align: center;
+	z-index: 9;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav div.logo a:hover {
+    color: #00E676;
+}
+
+.nav div.main_list {
+    height:auto;
+    float: right;
+}
+
+.nav div.main_list > ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list > ul > li {
+    width: auto;
+    height: auto;
+    padding: 0;
+    padding-right: 25px;
+    display: inline-block;
+}
+.nav div.main_list ul > li:last-child {
+	padding-right: 0;
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+.nav div.main_list > ul > li > a {
+    text-decoration: none;   
+    line-height: 40px;   
+    color: #333333;
+font-size: 18px;
+}
+
+.nav div.main_list ul li a:hover {
+    color:#F1666A;
+}
+
+
+/* Home section */
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{background-color: transparent;}
+.navTrigger {
+    display: none;
+}
+
+.nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;    background-color: #FAFAFA;
+}
+
+.nav div.main_list ul li.m-bd-btn a, .nav div.main_list ul li.m-si-btn a {
+	color: #ffffff;
+	min-width: initial;
+	line-height: normal;
+	padding: 10px 20px;
+	height: auto;
+	min-height: initial;
+}
+
+/* Media qurey section */
+
+
+@media screen and (max-width:1200px) {
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list > ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color:#FAFAFA;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list > ul > li {
+        width: 100%;
+        text-align: left;
+    }
+  .nav div.main_list > ul > li > a {
+	width: 100%;
+	padding: 20px;
+	display: inline-block;
+}
+    .nav div.media_button {
+        display: block;
+    }
+    .nav div.main_list ul li{border-bottom: 1px solid #ccc;}
+}
+
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color:#F1666A;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.affix {
+    padding: 10px 0 0 0;background-color: #FAFAFA;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+.myH2 {
+	text-align:center;
+	font-size: 4rem;
+}
+.myP {
+	text-align: justify;
+	padding-left:15%;
+	padding-right:15%;
+	font-size: 20px;
+}
+@media all and (max-width:700px){
+	.myP {
+		padding:2%;
+	}
+}
+.nav{padding-top: 10px;padding-bottom: 10px;}

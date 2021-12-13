@@ -1,0 +1,40 @@
+/* Slider  CSS  Start*/
+.home-slider{
+  background-color: #FAFAFA;
+	padding-top: 113px;
+	position: relative;
+	padding-bottom: 70px;
+    .slider-content{
+        margin-top: 50px;
+        h1{font-size: 52px;color: #414042; line-height: 78px;padding-bottom: 30px;font-weight: 700;}
+        p{font-size: 16px;color: #414042;  line-height: 25px;padding-bottom: 30px}
+        a{min-width: 239px;background-color: #fff;}
+    }
+    
+}
+
+
+.slider-counter{text-align: left;}
+.home-slider .owl-dots {
+	text-align: left;
+	padding-left: 80px;
+}
+.slider-counter {
+	text-align: left;
+	position: absolute;
+	bottom: 61px;
+	font-size: 25px;
+	color: #10C8CD;
+}
+.slider-counter:first-letter{font-size: 42px;color: #163C7B ;}
+.slider-img {
+	padding-top: 50px;
+}
+.m-bd-btn {
+	padding: 15px 0;
+}
+
+nav ul li.m-si-btn{padding-right: 0;}
+
+
+/* Slider  CSS  End*/

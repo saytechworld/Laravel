@@ -1,0 +1,136 @@
+/* Powerful Features CSS Start */
+
+.shape_top {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 1320px;
+	z-index: -1;
+}
+.features_area_outer {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background-image: url(../../images/line-bg.png);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 100% 100%;
+}
+
+.f_bx_item {
+   background-color: #F1666A;
+    box-shadow: 0 20px 60px 0 rgba(0, 117, 75, .06);
+    padding: 50px 40px 40px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    min-height: 453px
+}
+
+
+.f_bx_item .icon {
+    width: 127px;
+    height: 127px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    line-height: 127px;
+    font-size:64px;
+    text-align: center;
+    margin-bottom: 34px;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear
+}
+.f_bx_item .icon.icon_1 {
+    background-color: rgba(241, 102, 106, .059);
+    border-color: #F1666A;
+    color:#F1666A
+}
+
+.f_bx_item .solid_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    opacity: 1;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear
+}
+.f_bx_item h5 {
+	margin-bottom: 18px;
+	-webkit-transition: color .2s ease;
+	-o-transition: color .2s ease;
+	transition: color 0.2s ease;
+	font-size: 24px;
+	color: #333;
+font-weight: 500;
+}
+.f_bx_item p{color: #9A9A9A;line-height: 28px;letter-spacing: 0.5px;font-size: 16px;}
+.f_bx_item:hover .solid_overlay {
+    opacity: 0
+}
+.f_bx_item:hover .learn_btn_two, .f_bx_item:hover h5, .f_bx_item:hover p {
+    color: #fff
+}
+.f_bx_item:hover .icon {
+    border-color: rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, .059);
+    color: #fff
+}
+.slider-single {
+    text-align: center;
+}
+.slider-single iframe {
+    width: 1024px;
+    height: 590px;
+    background-color: #F1666A;
+    padding: 15px;
+    box-shadow: 0 5px 10px rgba(241, 102, 106, 0.4);
+    border-radius: 4px;
+}
+
+.how-work-video {
+    position: relative;
+    overflow: hidden;
+}
+.how-work-video:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-image: url(../../images/1.png);
+    width: 500px;
+    height: 300px;
+    background-size: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+.how-work-video:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background-image: url(../../images/3.png);
+    width: 532px;
+    height: 516px;
+    background-size: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    right: 0;
+}
+
+
+
+
+/* Powerful Features CSS End */
+
+.how-it-work-page .how-work-video:before{content: initial;} 
+
+

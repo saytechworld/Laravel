@@ -1,0 +1,179 @@
+.l-r-outer {
+	display: inline-block;
+	width: 100%;
+	box-shadow: 0 0 10px rgba(22,60,123,0.2);
+	border-radius: 3px;
+    .l-r-rit-sec{min-height: 650px;
+        .l-r-t-c{padding: 40px 25px 25px 25px;
+    strong{
+        color:#F1666A;font-size: 34px;font-weight: 500;padding-bottom: 15px;display: inline-block;width: 100%;
+    }
+    p{font-size: 26px;color: #333333;line-height: 39px;
+        a{ font-weight: 700; color: #333333;}
+        a:hover{ color: #F1666A;}
+      
+    }
+       }
+        }
+    .l-r-lft-sec {
+        padding:15px 0 25px 30px;
+   .forgot-link {
+	float: right;
+	position: relative;
+	top: -35px;
+	
+}
+        .or-op-bx { .lr-socail-btns{float: right;padding-top: 8px;}
+        .btn.cmn-blue-btn{min-width: 158px;}
+            span{font-size: 18px;color: #677294;padding-left: 30px;position: relative;top: 3px;} 
+        }
+        .lr-ftr-link{display: inline-block;width: 100%;text-align: center;
+            p{font-size: 22px;color: #333333;
+                a{color: #F1666A;font-weight: 500;}
+                a:hover{color:#F83D42; }
+            }
+            
+        }
+        .cmn-heading.text-left{padding-bottom:30px;}
+  }
+}
+.l-r-lft-sec .cmn-heading h1{text-align: left;}
+.captcha-img.form-control {
+    padding: 0;
+    display: inline-block;
+    height: auto;
+    line-height: initial;
+    font-size: initial;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+/* New Login page css start */
+
+.login-lft-sec h1 {
+    font-size: 30px;
+    color: #ec5f65;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.login-lft-sec h1 span{font-weight: 700;color: #3c3c3b;}
+.new-login-page {
+    background-color: #f6fafb;
+    position: relative;
+}
+.new-login-page:after{position: absolute;right:0;top:0;bottom: 0;background-color: #fff;content: "";width: 40%;}
+.login-lft-sec{text-align:center;}
+.b-lft-l-c strong{font-size:21px;color:#030c22;}
+.b-lft-l-c p {
+    color: #60656c;
+    font-size: 15px;
+    line-height: 27px;
+    padding-top: 20px;
+}
+.b-lft-l-c {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: -145px;
+}
+.login-rit-sec {
+    text-align: center;
+    z-index: 1;
+    position: relative;    
+    width: 300px;
+    margin: 0 auto;
+}
+.login-rit-sec strong{font-size: 21px; color: #030c22;}
+.login-rit-sec strong img{position: relative;top:3px;}
+.login-rit-sec .cmn-heading {display: inline-block; width: 100%; text-align: left; padding-top: 50px; border-bottom: 1px solid #f5f5f6; padding-bottom: 20px; margin-bottom: 50px;}
+.lr-ftr-link p { font-size: 15px;  text-align: left;}
+.lr-ftr-link p a{font-weight: 600;color: #ec5f65;}
+.login-rit-sec .or-op-bx .btn.cmn-blue-btn {background-color: #ec5f65;min-height: 50px;line-height: 50px; width: 100%;min-width: 100%;font-size: 16px;box-shadow: none;}
+.login-rit-sec .form-group{position: relative;}
+a.cmn-link.forgot-link { font-size: 14px; position: absolute; right: 0; color: #ec5f65;}
+a.cmn-link.forgot-link:hover{color: #000;}
+.login-rit-sec .or-op-bx .btn.cmn-blue-btn:hover{background-color: #F83D42;}
+.lr-ftr-link p a:hover{color: #000;}
+.lr-ftr-link { padding-top: 7em;}
+.login-rit-sec .form-control { border: 1px solid #edf0f1;  box-shadow: none;}
+.login-rit-sec .form-control:focus{border: 1px solid #333; }
+.ts-select {
+    position: relative;
+    width: 100%;
+}
+.ts-select::after {
+    content: "\f107";
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 30px;
+    right: 13px;
+    z-index: 1;
+    font-size: 20px;
+    color: #333;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    pointer-events: none;
+}
+.ts-select select.form-control {
+    padding: 0;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    padding-right: 25px;
+    font-size: 16px;
+    height: 60px !important;
+    color: #9CA3B9;
+    width: 100%;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+
+@media only screen and (max-width:1024px){
+.b-lft-l-c {  margin-top: -80px;}
+.login-rit-sec { width: 270px;}
+.b-lft-l-c{width: 100%;}
+.lr-ftr-link {padding-top: 01em;}  
+
+}
+
+@media only screen and (max-width:991px){
+.new-login-page:after{width: 46%;}
+.b-lft-l-c { margin-top: -22px;}
+    
+}
+@media only screen and (max-width:767px){
+.new-login-page:after{content: none;}
+.in-p-sec.new-login-page .mt_70.mb_70{margin:40px 0;} 
+.login-rit-sec .login-logo{display: none;} 
+.b-lft-l-c {margin-top: -116px;}
+.b-lft-l-c p{padding-top: 15px;}
+.login-lft-sec h1{margin-bottom: 25px;}
+.login-rit-sec {  width: 100%;  background-color: #fff;  padding: 30px 22%;  padding-top: 0;  margin-bottom: 30px;}
+    
+}
+
+@media only screen and (max-width:639px){
+.login-rit-sec{padding: 30px 16%;}
+.b-lft-l-c { margin-top: -70px;}
+
+}
+@media only screen and (max-width:439px){
+.login-rit-sec .cmn-heading {padding-top: 0;margin-bottom: 30px;padding-bottom: 10px;}  
+.login-rit-sec {padding: 30px;}
+.login-lft-sec h1{    font-size: 22px;}
+.b-lft-l-c {margin-top: -40px;}
+    
+}
+@media only screen and (max-width:359px){
+.login-rit-sec {  padding: 20px;}
+.in-p-sec.new-login-page .mt_70.mb_70 {margin: 30px 0;}
+    
+}
+
+/* New Login page css end */

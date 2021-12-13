@@ -1,0 +1,87 @@
+
+
+.faq-section{position: relative;}
+.faq-bg-shap {
+	position: absolute;
+	background: url(../../images/faq-bg-img.png) no-repeat scroll center;
+	left: 0;
+	width: 100%;
+	background-size: cover;
+	top: 0;
+	height: 100%;z-index: -1;
+    background-position: top center;
+}
+
+.panel-group .panel {
+
+	border-color: #fff;
+	float: right;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+	border-radius: 3px;
+}
+
+	.panel-default > .panel-heading {
+		padding: 0;
+		border-radius: 0;
+		color: #212121;
+		background-color: #FAFAFA;
+		border-color: #EEEEEE;
+	}
+
+
+.panel-title > a {
+	display: block;
+	padding: 30px 15px 30px 30px;
+	text-decoration: none;
+	color: #333333;
+    font-weight: 500;
+	font-size: 22px;
+}
+
+.panel-title > a:hover{ color: #F1666A;}
+.more-less {
+	float: right;
+	color: #F1666A;
+	font-size: 38px;
+	font-weight: bolder;
+	top: -8px;
+}
+
+	.panel-default > .panel-heading + .panel-collapse > .panel-body {
+		border-top-color: #EEEEEE;
+	}
+.panel-group .panel + .panel {
+	margin-top: 40px;
+}
+.panel-body p, .panel-body{font-size: 16px;line-height: 36px;}
+
+.faq-section {
+    .container{position: relative;
+        .cmn-heading{position: absolute;left:70px;text-align: left;}
+        .panel-group{            
+            .panel.panel-default:nth-child(1){width: 67%;}
+             .panel.panel-default:nth-child(2){width: 75%;}
+             .panel.panel-default:nth-child(3){width: 80%;}
+             .panel.panel-default:nth-child(4){width: 72%;}
+             .panel.panel-default:nth-child(5){width: 90%;}
+        }
+    }
+    
+}
+
+.faq-page{
+.faq-section {
+    .container{position: relative;
+        .cmn-heading{position: absolute;left:70px;text-align: left;}
+        .panel-group{            
+            .panel.panel-default:nth-child(1){width: 100%;}
+             .panel.panel-default:nth-child(2){width:100%;}
+             .panel.panel-default:nth-child(3){width: 100%;}
+             .panel.panel-default:nth-child(4){width: 100%;}
+             .panel.panel-default:nth-child(5){width: 100%;}
+        }
+    }
+    
+}
+    }
+

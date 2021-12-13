@@ -1,0 +1,90 @@
+/* Scss Document */
+
+
+.blog-page img{
+  height:150px;
+  width:100%;
+}
+
+
+.blog-page .card{
+  transition:0.5s;
+  cursor:pointer;
+}
+.card-block {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+.card-title {
+    margin-bottom: .75rem;
+}
+.card-text:last-child {
+    margin-bottom: 0;
+}
+.blog-page .card {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+        margin-bottom: 30px;
+}
+.blog-page .card-title{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+    
+    font-weight: 700;
+    
+}
+.blog-page .card-title i{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+  color:#ffa710
+}
+.blog-page .card-title i:hover{
+  transform: scale(1.25) rotate(100deg); 
+  color:#18d4ca;
+  
+}
+.blog-page .card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.blog-page .card-text{
+  height:auto;  
+}
+
+.blog-page .card::before, .blog-page .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.blog-page .card::before {
+  transform-origin: left top;
+}
+.blog-page .card::after {
+  transform-origin: right bottom;
+}
+.blog-page .card:hover::before, .blog-page .card:hover::after, .blog-page .card:focus::before, .blog-page .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}

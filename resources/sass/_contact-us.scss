@@ -1,0 +1,91 @@
+/* Scss Document */
+.contact-us form label{
+	font-size: 16px;
+	color:#333;
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+.contact-us .l-r-outer .l-r-lft-sec .cmn-heading.text-left h3.send-msg{
+	font-size: 34px;
+}
+.contact-us .l-r-outer .l-r-lft-sec .cmn-heading.text-left{
+	padding-bottom: 10px;
+}
+.contact-us .l-r-outer .l-r-lft-sec .or-op-bx .lr-socail-btns{
+	padding-top: 15px;
+}
+.contact-us .l-r-outer .l-r-rit-sec .l-r-t-c{
+	padding-top: 33px;
+}
+.contact-us .contact-info-ful-pg .contact-info-rgt .c-info-bx {
+    position: relative;
+    padding-left: 85px;
+    padding-bottom: 15px;
+	margin: 15px 0;
+}
+.contact-us .contact-info-ful-pg .contact-info-rgt .c-info-bx strong {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Poppins-Medium';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.contact-us .contact-info-ful-pg .contact-info-rgt .c-info-bx p {
+    color:#fff;
+    font-size: 16px;
+    line-height: 26px;
+}
+.contact-us .contact-info-ful-pg .contact-info-rgt .c-info-bx ul li {
+    display: inline-block;
+    margin-right: 10px;
+	margin-bottom: 10px;
+}
+.contact-us .contact-info-ful-pg .contact-info-rgt .c-info-bx p a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    word-break: break-word;
+}
+.contact-us .contact-info-ful-pg .contact-info-rgt .c-info-bx p a:hover {
+    color: #10C8CD;
+}
+.contact-us .contact-info-ful-pg .contact-info-rgt{
+	padding: 25px;
+}
+.contact-us .l-r-outer .l-r-rit-sec{
+	min-height:632px;
+	background-color:#F1666A;
+}
+.contact-us .l-r-outer .l-r-rit-sec .l-r-t-c strong{
+	color: #fff;
+}
+.contact-us .l-r-outer .l-r-lft-sec .or-op-bx .btn.cmn-blue-btn{
+	margin-bottom: 0px;
+}
+.contact-us .l-r-outer .l-r-lft-sec {
+    padding: 15px 0 0px 30px;
+}
+
+
+.btn:focus, .btn:active{
+	outline: none !important;
+}
+
+.business-name-input{
+	margin: 15px 0;
+	h1{
+		display: inline-block;
+	}
+	input{
+		color:#163C7B;
+		font-family: 'Poppins-Bold';
+		text-transform: capitalize;
+		border:none;
+		border-bottom: 5px solid;
+		box-shadow: none;
+		padding: 0px 10px;
+		font-size: 52px;
+		width: 320px;
+	}
+}
